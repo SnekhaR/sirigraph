@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<p id="new"></p>
+<p id="stringcon"></p>
+<script>
+
+function concat(s1,s2,s3)
+{
+
+    var s = s1 + s2 + s3;
+    return s;
+}
+
+var obj = { 
+	city : "Chennai",
+	location : "Taramani",
+	Building : "IITM",
+	Company : "TataComm"
+};
+
+var txt = ""
+for (x in obj) {
+    txt += obj[x] + " ";
+}
+
+document.getElementById("stringcon").innerHTML = concat(' its ',' a ',' good day ');
+document.getElementById("new").innerHTML = txt ;
+</script>
+</body>
+</html>
